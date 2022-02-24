@@ -1,0 +1,5 @@
+// when player clicks on hit 
+    add a card to the player array
+        add to total 
+            if over 21 "you loose"
+            

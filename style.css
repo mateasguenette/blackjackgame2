@@ -1,0 +1,134 @@
+.new-card {
+    border: 1px solid pink;
+    height: 10vh;
+    width: 5vh;
+}
+
+#player, #dealer{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+body{
+    /* border: 1px solid pink;
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+    background-color: beige;
+
+}
+h1{
+    /* border: 1px solid pink;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin: 0 auto; */
+    padding-left: 2vh;
+
+}
+
+h2{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin: 0 auto;
+    padding: 1vh;
+}
+
+.dealerStats, .playerStats{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin: 0 auto;
+    padding: 1vh;
+
+}
+
+button{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin: 0 auto;
+    padding: 1vh;
+    display: inline-block;
+
+    border: 1px solid blue;
+    background: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 10px;
+    transition: 0.8s;
+
+    position: relative;
+    overflow: hidden;
+    
+    
+
+}
+
+ button:hover{
+    color: #fff;
+
+}
+
+
+button:hover::before{
+    height: 180%;
+}
+
+.buttons{
+    border: 4px solid blue;
+    text-align: center;
+    
+}
+
+
+
+
+.bg-modal{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.modal-content{
+    width: 200px;
+    height: 120px;
+    background-color: white;
+    border-radius: 4px;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+.close{
+    position: absolute;
+    top: 0;
+    right: 14px;
+    font-size: 42px;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+
+.gameContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.buttonsss{
+    display: flex;
+    justify-content: center;
+}
