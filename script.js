@@ -62,8 +62,7 @@ function handlehit(e){
     e.preventDefault()
     // add a card 
     newCard(player)
-        // add it to total
-            // if over 21 player looses
+        
     
     
 }
@@ -76,7 +75,7 @@ function newCard(who){
     if(who == player){
     let n = Math.floor(Math.random() * 13) 
     let y = Math.floor(Math.random() * 4) 
-    // console.log(n, y)
+    
     let cardNum = ['A', '02', '03', '04', '05', '06', '07', '08', '09', '10', 'J', 'Q', 'K']
     let type = ['c', 'd', 's', 'h']
             
@@ -91,7 +90,7 @@ function newCard(who){
     // add to total
     if (parseInt(cardNum[n]) || cardNum[n] == 'A'){
         player.total += cardNum.indexOf(cardNum[n])+1
-    // console.log(`new total ${player.total}`)
+    
     }else {
         player.total += 10
     }
@@ -105,7 +104,7 @@ function newCard(who){
     if(who == dealer){
         let n = Math.floor(Math.random() * 13) 
     let y = Math.floor(Math.random() * 4) 
-    // console.log(n, y)
+    
     let cardNum = ['A', '02', '03', '04', '05', '06', '07', '08', '09', '10', 'J', 'Q', 'K']
     let type = ['c', 'd', 's', 'h']
             
@@ -118,7 +117,7 @@ function newCard(who){
     // add total
     if (parseInt(cardNum[n]) || cardNum[n] == 'A'){
         dealer.total += cardNum.indexOf(cardNum[n])+1
-    // console.log(`new total ${dealer.total}`)
+    
     }else {
         dealer.total += 10
     }
@@ -142,8 +141,7 @@ function reset(){
     player.total = 0
     dealer.total = 0
 
-    console.log(playerCards)
-    console.log(dealerCards)
+    
 
     //delete old game
     playerCards.forEach(function(card){
@@ -224,14 +222,13 @@ function handlestand(e) {
 
 function over21 (){
     if(dealer.total > 21){
-        //alert('you win')
         console.log('you win')
         player.wins += 1
         openWindow(player)
         console.log(`player: ${player.wins}`)
     }
     if(player.total > 21){
-        //alert('you loose')
+        
         console.log('you loose')
         dealer.wins += 1
         openWindow(dealer)
@@ -242,36 +239,30 @@ function over21 (){
 function winner(){
     
     console.log('inside winner')
-   // if dealer over 21 you win
-   // if your over 21 you loose
-   // if both are under 21 
-    // and if your total is bigger than dealer you win
-    // else you loose
+   
     console.log(player.total)
     console.log(dealer.total)
 
     if(dealer.total > 21){
-        //alert('you win')
-        console.log('you win')
+        
+        
         player.wins += 1
         openWindow(player)
     }
     if(player.total > 21){
-        //alert('you loose')
-        console.log('you loose')
+        
+        
         dealer.wins += 1
         openWindow(dealer)
     }
 
     if(player.total < 21 && dealer.total < 21){
         if(player.total > dealer.total){
-            //alert('you win')
-            console.log('you win')
+            
             player.wins += 1
             openWindow(player)
         }else{
-            // alert('you loose')
-            console.log('you loose')
+            
             dealer.wins += 1
             
             openWindow(dealer)
@@ -290,7 +281,7 @@ function openWindow(who){
         popUp.innerText = `you loose!`
     }
     document.querySelector('.bg-modal').style.display = 'flex';
-    console.log('button working')
+    
 }
 
 function closeWindow(){
