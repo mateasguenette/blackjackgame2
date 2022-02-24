@@ -14,8 +14,8 @@ BlackJack is a single player game. The goal of the game is to get as close to 21
 
 ## Screenshots
 
-![Starting game board](img/starting.png)
-![Final game board](img/ending.png)
+![Starting game board](starting.png)
+![Final game board](ending.png)
 
 ## Technologies Used
 
