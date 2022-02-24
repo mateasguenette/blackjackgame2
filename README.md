@@ -1,4 +1,4 @@
-# **CHECKERS**
+# **blackjack**
 
 ## Rules and General Overview
 
